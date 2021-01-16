@@ -1,10 +1,15 @@
-﻿using System;
+﻿using Ninject;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace HotelRegister1.Business.DependencyResolvers.Ninject
 {
-    class InstanceFactory
+    public class InstanceFactory
     {
+        public static T GetInstance<T>()
+        {
+            return new StandardKernel(new BusinessModule()).Get<T>();
+        }
     }
 }

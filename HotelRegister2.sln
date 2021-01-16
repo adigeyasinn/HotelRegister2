@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelRegister1.Entities", "HotelRegister1.Entities\HotelRegister1.Entities.csproj", "{19B8B408-AE8F-40B9-B78A-9064CFD758E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelRegister1.Entities", "HotelRegister1.Entities\HotelRegister1.Entities.csproj", "{19B8B408-AE8F-40B9-B78A-9064CFD758E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelRegister1.DataAccess", "HotelRegister1.DataAccess\HotelRegister1.DataAccess.csproj", "{A9E56D08-A438-4BFA-9B7F-79C6AA9CC8BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelRegister1.DataAccess", "HotelRegister1.DataAccess\HotelRegister1.DataAccess.csproj", "{A9E56D08-A438-4BFA-9B7F-79C6AA9CC8BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelRegister1.Business", "HotelRegister1.Business\HotelRegister1.Business.csproj", "{2E0981BE-A799-4249-B225-DCAED319FD55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelRegister1.Business", "HotelRegister1.Business\HotelRegister1.Business.csproj", "{2E0981BE-A799-4249-B225-DCAED319FD55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelRegister1.ConsoleApp", "HotelRegister1.ConsoleApp\HotelRegister1.ConsoleApp.csproj", "{36D0AB53-C19A-4AA0-9DB0-BB2ACD8E7D31}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{2E0981BE-A799-4249-B225-DCAED319FD55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E0981BE-A799-4249-B225-DCAED319FD55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E0981BE-A799-4249-B225-DCAED319FD55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36D0AB53-C19A-4AA0-9DB0-BB2ACD8E7D31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36D0AB53-C19A-4AA0-9DB0-BB2ACD8E7D31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36D0AB53-C19A-4AA0-9DB0-BB2ACD8E7D31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36D0AB53-C19A-4AA0-9DB0-BB2ACD8E7D31}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

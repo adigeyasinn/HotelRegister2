@@ -4,7 +4,8 @@ using System.Text;
 
 namespace HotelRegister1.Entities.Abstract
 {
-    interface IEntity
+    public interface IEntity
     {
+
     }
 }
