@@ -2,12 +2,15 @@
 using HotelRegister1.Entities.Concrete;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 
 namespace HotelRegister1.DataAccess.Concrete.EntityFramework
 {
     public class EfHotelDal : EfRepositoryBase<Hotel, HotelRegisterContext>, IHotelDal
     {
+       
 
     }
 }

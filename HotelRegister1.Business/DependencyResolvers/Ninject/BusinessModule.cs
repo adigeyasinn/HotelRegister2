@@ -16,7 +16,15 @@ namespace HotelRegister1.Business.DependencyResolvers.Ninject
         {
 
             Bind<IHotelService>().To<HotelManager>().InSingletonScope();
-            Bind<IHotelDal>().To<AdoHotelDal>().InSingletonScope();
+            Bind<IHotelDal>().To<EfHotelDal>().InSingletonScope();
         }
+
+        /*IOC ile bağımlılıkların en aza indirgenmesi amaçlanır.
+         * Inversion of Control’ün getirdiği avantajlar;
+        Bir methodun implementasyonundan izole bir şekilde çalıştırılabilmesini sağlar.
+        Farklı implementasyonlar arasında, kolayca geçiş yapabilmenizi sağlar.
+        Program modülerliğini artırır.
+        Bağımlılıklar en aza indiği için test etmeyi/yazmayı kolaylaştırır.*/
+
     }
 }

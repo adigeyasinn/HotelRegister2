@@ -23,14 +23,18 @@ namespace HotelRegister1.ConsoleApp
                 Console.WriteLine(ex.Message);
             }
 
+            //var list = hotelService.Get(x=>x.HotelId==1);
+            //Console.WriteLine(list);
+
             var list = hotelService.GetAll();
+          
 
             foreach (var c in list)
             {
                 Console.WriteLine(c);
             }
 
-           
+
 
             Console.ReadLine();
         }

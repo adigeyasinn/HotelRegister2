@@ -30,6 +30,13 @@ namespace HotelRegister1.DataAccess.Concrete.EntityFramework
             }
         }
 
+        public Tentity Get(Expression<Func<Tentity, bool>> filter)
+        {
+            using (var context=new Tcontext())
+            {
+                return context.Set<Tentity>().SingleOrDefault(filter);
+            }
+        }
 
         public List<Tentity> GetAll(Expression<Func<Tentity, bool>> filter = null)
         {
