@@ -14,7 +14,7 @@ namespace HotelRegister1.Entities.Concrete
 
         public override string ToString()
         {
-            return $"{HotelId,-15}" +
+            return 
                 $"{HotelName,-15}" +
                 $"{FeePerNight,-15}" +
                 $"{Stars,-15}";

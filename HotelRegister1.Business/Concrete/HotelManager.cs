@@ -10,7 +10,7 @@ namespace HotelRegister1.Business.Concrete
 {
     public class HotelManager : IHotelService
     {
-        IHotelDal _hotelDal; //dependency injection
+        IHotelDal _hotelDal; 
 
         public HotelManager(IHotelDal hotelDal)
         {
@@ -32,9 +32,9 @@ namespace HotelRegister1.Business.Concrete
             return _hotelDal.Get(filter);
         }
 
-        public List<Hotel> GetAll()
+        public List<Hotel> GetAll(Expression<Func<Hotel, bool>> filter=null)
         {
-            return _hotelDal.GetAll();
+            return _hotelDal.GetAll(filter);
         }
 
        

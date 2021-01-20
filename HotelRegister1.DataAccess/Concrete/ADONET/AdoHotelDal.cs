@@ -23,7 +23,7 @@ namespace HotelRegister1.DataAccess.Concrete.ADONET
         public void Delete(Hotel hotel)
         {
             using (SqlCommand cmd =
-                new SqlCommand("DELETE FROM HotelDb where HotelId = @HotelId"))
+                new SqlCommand("DELETE FROM Hotels where HotelId = @HotelId"))
             {
                 cmd.Parameters.AddWithValue("HotelId",hotel.HotelId);
                 DBMS.SqlExecuteNonQuery(cmd);
@@ -33,7 +33,7 @@ namespace HotelRegister1.DataAccess.Concrete.ADONET
         public Hotel Get(Expression<Func<Hotel, bool>> filter)
         {
             var hotelList = new List<Hotel>();
-            SqlCommand cmd = new SqlCommand("Select * from HotelDb");
+            SqlCommand cmd = new SqlCommand("Select * from Hotels");
             
 
             SqlDataReader reader = DBMS.SqlExecuteReader(cmd);
@@ -77,7 +77,7 @@ namespace HotelRegister1.DataAccess.Concrete.ADONET
         public void Update(Hotel hotel)
         {
             using (SqlCommand cmd =
-               new SqlCommand("UPDATE HotelDb set HotelName = @HotelName, FeePerNight = @FeePerNight, Stars = @Stars where HotelId = @HotelId"))
+               new SqlCommand("UPDATE Hotels set HotelName = @HotelName, FeePerNight = @FeePerNight, Stars = @Stars where HotelId = @HotelId"))
             {
                 cmd.Parameters.AddWithValue("HotelId",hotel.HotelId);
                 cmd.Parameters.AddWithValue("HotelName", hotel.HotelName);

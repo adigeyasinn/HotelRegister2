@@ -8,7 +8,7 @@ namespace HotelRegister1.Business.Abstract
 {
     public interface IHotelService
     {
-        List<Hotel> GetAll();
+        List<Hotel> GetAll(Expression<Func<Hotel, bool>> filter=null);
         Hotel Get(Expression<Func<Hotel, bool>> filter);
         void Add(Hotel hotel);
         void Delete(Hotel hotel);
